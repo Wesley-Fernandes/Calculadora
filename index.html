@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="reset-bar">
+        <span class="button-big reset-button hover" onclick="RestartOperation()">Reset</span>
+    </div>
+    <main>
+        <div class="hud">
+            0
+        </div>
+        <div class="buttons">
+            <div class="buttons_numbers">
+                <span class="button hover ">1</span>
+                <span class="button hover">2</span>
+                <span class="button hover">3</span>
+                <span class="button hover">4</span>
+                <span class="button hover">5</span>
+                <span class="button hover">6</span>
+                <span class="button hover">7</span>
+                <span class="button hover">8</span>
+                <span class="button hover">9</span>
+                <span class="button hover">0</span>
+                <span class="button-big hover" onclick="Calculate()">=</span>
+            </div>
+            <div class="buttons_actions">
+                <span class="button hover" id="more" onclick="MoreOperation()">+</span>
+                <span class="button hover" id="minus" onclick="LessOperation()">-</span>
+                <span class="button hover" id="multiply" onclick="MultiplyOperation()">*</span>
+                <span class="button hover" id="divider" onclick="DividerOperation()">/</span>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
